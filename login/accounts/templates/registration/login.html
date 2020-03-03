@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+
+<br>
+    <br>
+    <br>
+{% block content %}
+    <br>
+    <h1 align="center" style="color: whitesmoke;">Login </h1></font>
+   
+    <div class="login_box">
+       <form  method="POST">
+       <br>
+       <br>
+       {% csrf_token %}
+
+       {{form.as_p}}
+
+        <button class="btn btn-primary">Login</button>
+       
+      </form>
+    </div>
+   
+{% endblock %}

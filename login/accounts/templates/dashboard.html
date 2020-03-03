@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<div class="container-fluid" style="margin-top:20px">
+      <a style="float:right" href="{% url 'logout' %}" class="btn btn-danger">Logout</a>
+
+    <h1 align="center">Welcome,<i> {{user.username}}</i></h1>
+    
+    <p>
+       <br><br>
+      <h2 style="color:white">Hi, there welcome to Lucifer's world !.....</h2>
+    </p>
+</div>
+
+
+    
+{% endblock %}
